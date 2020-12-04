@@ -23,3 +23,31 @@ $(document).ready(function(){
 		$('body').toggleClass('lock');
 	});
 });
+
+// Фильтр
+$(document).ready(function(){
+	let filter = $("[data-filter]");
+	$('.price__filter-link1').addClass('active');
+	$('.price__list-table2,.price__list-table3').addClass('hide');	
+	filter.on("click", function(event){
+		// Подсветка только активной клавиши
+		$(this).addClass('active').siblings().removeClass('active');
+		// При нажатии на наш фильтр, страница не будет обновляться и перекидывать нас в начало
+		event.preventDefault();
+		let cat = $(this).data('filter');
+		$("[data-cat]").each(function(){
+			let workCat = $(this).data('cat');
+			if (workCat != cat){
+				$(this).addClass('hide');
+			}else{
+				$(this).removeClass('hide');
+			}
+
+		});
+	});
+});
+
+
+
+
+
