@@ -320,6 +320,7 @@ body {
 }
 
 .navbar__logo-text {
+  color: #000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1289,6 +1290,14 @@ body {
     padding-bottom: 0px;
   }
 
+  .price__list-title:last-child {
+    padding-left: 0px;
+  }
+
+  .price__list-cost {
+    padding: 0px;
+  }
+
   .price__list-subtitle {
     padding-top: 10px;
     font-size: 13px;
@@ -1296,10 +1305,10 @@ body {
   }
 
   .price__list-name {
-    width: 60%;
+    width: 48%;
     font-size: 11px;
     line-height: 11px;
-    padding: 10px 70px 0px 0px;
+    padding-right: 10px;
   }
 
   .price__filter-link {
@@ -1310,8 +1319,12 @@ body {
   .price__btn {
     width: 120px;
     height: 30px;
-    font-size: 9px;
+    font-size: 8px;
     margin: 15px 30px 0px 0px;
+  }
+
+  .price__btn img {
+    width: 15px;
   }
 }
 

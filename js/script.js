@@ -48,6 +48,18 @@ $(document).ready(function(){
 });
 
 
+// Плавная прокрутка до нужного раздела 
+$(function(){
+	$('.about').on('click', function(event){
+	  $('html,body').stop().animate({ scrollTop: $('.about__body').offset().top }, 1200);
+	  event.preventDefault();
+	});
+	$('.price').on('click', function(event){
+	  $('html,body').stop().animate({ scrollTop: $('.price__body').offset().top }, 1200);
+	  event.preventDefault();
+	});
+});
+
 
 
 
