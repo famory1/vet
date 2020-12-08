@@ -53,10 +53,14 @@ $(function(){
 	$('.about').on('click', function(event){
 	  $('html,body').stop().animate({ scrollTop: $('.about__body').offset().top }, 1200);
 	  event.preventDefault();
+	  $('.navbar__burger,.navbar__panel,.navbar__logo,.navbar__phone').removeClass('active');
+	  $('body').removeClass('lock');
 	});
 	$('.price').on('click', function(event){
 	  $('html,body').stop().animate({ scrollTop: $('.price__body').offset().top }, 1200);
 	  event.preventDefault();
+	  $('.navbar__burger,.navbar__panel,.navbar__logo,.navbar__phone').removeClass('active');
+	  $('body').removeClass('lock');
 	});
 });
 
