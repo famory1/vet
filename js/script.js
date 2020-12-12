@@ -28,7 +28,7 @@ $(document).ready(function(){
 $(document).ready(function(){
 	let filter = $("[data-filter]");
 	$('.price__filter-link1').addClass('active');
-	$('.price__list-table2,.price__list-table3').addClass('hide');	
+	$('.price__list-table1').addClass('hide');	
 	filter.on("click", function(event){
 		// Подсветка только активной клавиши
 		$(this).addClass('active').siblings().removeClass('active');
@@ -47,20 +47,41 @@ $(document).ready(function(){
 	});
 });
 
+// Плавная прокуртка до нужного раздела
+$(".navbar__link").on("click", function(e){
+	$('.navbar__burger,.navbar__panel,.navbar__logo,.navbar__phone').removeClass('active');
+	$('body').removeClass('lock');
+    e.preventDefault();
+    var anchor = $(this).attr('href');
+    $('html, body').stop().animate({
+        scrollTop: $(anchor).offset().top - 50
+    }, 1200);
+});
 
-// Плавная прокрутка до нужного раздела 
-$(function(){
-	$('.about').on('click', function(event){
-	  $('html,body').stop().animate({ scrollTop: $('.about__body').offset().top }, 1200);
-	  event.preventDefault();
-	  $('.navbar__burger,.navbar__panel,.navbar__logo,.navbar__phone').removeClass('active');
-	  $('body').removeClass('lock');
-	});
-	$('.price').on('click', function(event){
-	  $('html,body').stop().animate({ scrollTop: $('.price__body').offset().top }, 1200);
-	  event.preventDefault();
-	  $('.navbar__burger,.navbar__panel,.navbar__logo,.navbar__phone').removeClass('active');
-	  $('body').removeClass('lock');
+
+
+
+
+
+// Фильтр для списка сотрудников 
+$(document).ready(function(){
+	let list = $("[data-list]");
+	$('.doctors__item1').addClass('active');
+	$('.doctors__person2,.doctors__person3,.doctors__person4').addClass('hide');	
+	list.on("click", function(event){
+		// Подсветка только активной клавиши
+		$(this).addClass('active').siblings().removeClass('active');
+		// При нажатии на наш фильтр, страница не будет обновляться и перекидывать нас в начало
+		event.preventDefault();
+		let person = $(this).data('list');
+		$("[data-person]").each(function(){
+			let workPerson = $(this).data('person');
+			if (workPerson != person){
+				$(this).addClass('hide');
+			}else{
+				$(this).removeClass('hide');
+			}
+		});
 	});
 });
 
