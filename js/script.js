@@ -58,11 +58,6 @@ $(".navbar__link").on("click", function(e){
     }, 1200);
 });
 
-
-
-
-
-
 // Фильтр для списка сотрудников 
 $(document).ready(function(){
 	let list = $("[data-list]");
@@ -85,6 +80,38 @@ $(document).ready(function(){
 	});
 });
 
-
+// Слайдер
+new Swiper('.reviews__slider', {
+	// Стрелки
+    navigation: {
+	    nextEl: '.swiper-button-next',
+	    prevEl: '.swiper-button-prev',
+	 },
+	// Буллеты
+	pagination: {
+		el: '.swiper-pagination',
+		clickable: true
+	},
+	// Количество слайдов на одной странице
+	slidesPerView: 3,
+	// активный слайд по центру
+	centeredSlides: true,
+	// Параметр бесконечности
+	loop: true,
+	// Скорость прокрутки слайдера
+	speed: 500,
+	breakpoints:{
+		320:{
+			slidesPerView: 2,
+		},
+		480:{
+			slidesPerView: 2,
+		},
+		992:{
+			slidesPerView: 3,
+		},
+	}
+	
+})
 
 
