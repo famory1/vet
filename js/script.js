@@ -205,7 +205,7 @@ new Swiper('.reviews__slider', {
 	// Параметр бесконечности
 	loop: true,
 	// Скорость прокрутки слайдера
-	speed: 500,
+	speed: 800,
 	breakpoints:{
 		320:{
 			slidesPerView: 2,
@@ -216,7 +216,7 @@ new Swiper('.reviews__slider', {
 		992:{
 			slidesPerView: 3,
 		},
-	}
+	},
 });
 
 
@@ -224,3 +224,10 @@ new Swiper('.reviews__slider', {
 
 
 
+
+// Функция для блокировки обновления страницы
+$(document).ready(function(){
+	$('.reviews__link, .btn__main, .btn__question').click(function(event){
+		event.preventDefault();
+	});
+});
