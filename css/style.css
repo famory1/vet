@@ -604,6 +604,7 @@ body.lock {
 .title {
   font-weight: 600;
   font-size: 48px;
+  z-index: 1;
   line-height: 59px;
   letter-spacing: 0.015em;
   -ms-flex: 0 0 auto;
@@ -1055,9 +1056,9 @@ body.lock {
   left: 0;
   height: 25%;
   width: 100%;
-  background: -webkit-gradient(linear, left bottom, left top, from(#DBDBDB), to(transparent));
-  background: -o-linear-gradient(bottom, #DBDBDB, transparent);
-  background: linear-gradient(to top, #DBDBDB, transparent);
+  background: -webkit-gradient(linear, left bottom, left top, from(#E6E6E6), to(transparent));
+  background: -o-linear-gradient(bottom, #E6E6E6, transparent);
+  background: linear-gradient(to top, #E6E6E6, transparent);
   z-index: 1;
 }
 
@@ -1124,9 +1125,6 @@ body.lock {
   -webkit-transform: scale(0.6);
       -ms-transform: scale(0.6);
           transform: scale(0.6);
-  -webkit-transition: 0.8s;
-  -o-transition: 0.8s;
-  transition: 0.8s;
   -webkit-transition: all 0.8s;
   -o-transition: all 0.8s;
   transition: all 0.8s;
@@ -1334,6 +1332,10 @@ body.lock {
   height: 147px;
 }
 
+.popup__btn {
+  z-index: 1;
+}
+
 .popup.open {
   opacity: 1;
   visibility: visible;
@@ -1523,6 +1525,10 @@ body.lock {
   width: 100%;
 }
 
+.btn__main:hover > span {
+  color: #C63848FF;
+}
+
 .btn__question {
   width: 200px;
   height: 50px;
@@ -1545,16 +1551,19 @@ body.lock {
   -o-transition: all 0.5s;
   transition: all 0.5s;
   position: relative;
+  z-index: 1;
 }
 
 .btn__question span {
   color: #fff;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .btn__question:before {
   content: '';
-  background: -o-linear-gradient(191.27deg, #F5C1CEFF 10%, #DE2220FF 173.65%);
-  background: linear-gradient(258.73deg, #F5C1CEFF 10%, #DE2220FF 173.65%);
+  background-color: #FFF9F9;
   width: 0%;
   height: 100%;
   position: absolute;
@@ -1569,10 +1578,17 @@ body.lock {
   transition: all 0.6s;
   -webkit-box-shadow: 0 0 30px #E4999EFF;
           box-shadow: 0 0 30px #E4999EFF;
+  opacity: 0;
+  border: 2px solid #E4999EFF;
 }
 
 .btn__question:hover::before {
   width: 100%;
+  opacity: 100%;
+}
+
+.btn__question:hover > span {
+  color: #E4999EFF;
 }
 
 @media (max-width: 1202px) {
