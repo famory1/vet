@@ -1060,6 +1060,7 @@ body.lock {
   background: -o-linear-gradient(bottom, #E6E6E6, transparent);
   background: linear-gradient(to top, #E6E6E6, transparent);
   z-index: 1;
+  overflow: hidden;
 }
 
 .reviews__container {
