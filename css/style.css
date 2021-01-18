@@ -1422,12 +1422,11 @@ body.lock {
   z-index: 10;
   line-height: 59px;
   letter-spacing: 0.015em;
-  background: -o-linear-gradient(208.26deg, #D80101 -31.21%, rgba(255, 54, 54, 0.79) 76.47%);
-  background: linear-gradient(241.74deg, #D80101 -31.21%, rgba(255, 54, 54, 0.79) 76.47%);
+  background-image: -o-linear-gradient(208.26deg, #D80101 -31.21%, rgba(255, 54, 54, 0.79) 76.47%);
+  background-image: linear-gradient(241.74deg, #D80101 -31.21%, rgba(255, 54, 54, 0.79) 76.47%);
+  background-image: -webkit-gradient(241.74deg, #D80101 -31.21%, rgba(255, 54, 54, 0.79) 76.47%);
   -webkit-background-clip: text;
   color: transparent;
-  display: block;
-  -webkit-mask-image: linear-gradient(241.74deg, #D80101 -31.21%, rgba(255, 54, 54, 0.79) 76.47%);
 }
 
 .desc__body {
