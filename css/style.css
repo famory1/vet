@@ -1425,6 +1425,7 @@ body.lock {
   background: -o-linear-gradient(208.26deg, #D80101 -31.21%, rgba(255, 54, 54, 0.79) 76.47%);
   background: linear-gradient(241.74deg, #D80101 -31.21%, rgba(255, 54, 54, 0.79) 76.47%);
   -webkit-background-clip: text;
+  -webkit-color: red;
   color: transparent;
 }
 
@@ -1481,7 +1482,6 @@ body.lock {
 }
 
 .advantages__title {
-  text-align: center;
   margin-top: 140px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1489,15 +1489,6 @@ body.lock {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-weight: 600;
-  font-size: 48px;
-  z-index: 1;
-  line-height: 59px;
-  letter-spacing: 0.015em;
-  background: -o-linear-gradient(208.26deg, #D80101 -31.21%, rgba(255, 54, 54, 0.79) 76.47%);
-  background: linear-gradient(241.74deg, #D80101 -31.21%, rgba(255, 54, 54, 0.79) 76.47%);
-  -webkit-background-clip: text;
-  color: transparent;
 }
 
 .advantages__body {
@@ -1554,19 +1545,6 @@ body.lock {
   margin: 0 auto;
   margin-top: 140px;
   padding: 0px 15px;
-}
-
-.price__title {
-  text-align: center;
-  font-weight: 600;
-  font-size: 48px;
-  z-index: 1;
-  line-height: 59px;
-  letter-spacing: 0.015em;
-  background: -o-linear-gradient(208.26deg, #D80101 -31.21%, rgba(255, 54, 54, 0.79) 76.47%);
-  background: linear-gradient(241.74deg, #D80101 -31.21%, rgba(255, 54, 54, 0.79) 76.47%);
-  -webkit-background-clip: text;
-  color: transparent;
 }
 
 .price__filter {
