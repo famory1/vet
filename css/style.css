@@ -1489,6 +1489,7 @@ body.lock {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  color: red;
 }
 
 .advantages__body {
@@ -1525,7 +1526,10 @@ body.lock {
   font-size: 20px;
   line-height: 24px;
   letter-spacing: 0.015em;
-  color: red;
+  background: -o-linear-gradient(208.26deg, #D80101 -31.21%, rgba(255, 54, 54, 0.79) 76.47%);
+  background: linear-gradient(241.74deg, #D80101 -31.21%, rgba(255, 54, 54, 0.79) 76.47%);
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 .advantages__card-text {
