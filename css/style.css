@@ -1226,12 +1226,6 @@ body.lock {
   line-height: 85%;
   text-align: center;
   letter-spacing: 0.01em;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(60%, #000000), to(rgba(0, 0, 0, 0.34)));
-  background: -o-linear-gradient(top, #000000 60%, rgba(0, 0, 0, 0.34) 100%);
-  background: linear-gradient(180deg, #000000 60%, rgba(0, 0, 0, 0.34) 100%);
-  background: -webkit-linear-gradient(180deg, #000000 60%, rgba(0, 0, 0, 0.34) 100%);
-  -webkit-background-clip: text;
-  color: transparent;
 }
 
 .navbar__burger {
@@ -1422,11 +1416,7 @@ body.lock {
   z-index: 10;
   line-height: 59px;
   letter-spacing: 0.015em;
-  background-image: -o-linear-gradient(208.26deg, #D80101 -31.21%, rgba(255, 54, 54, 0.79) 76.47%);
-  background-image: linear-gradient(241.74deg, #D80101 -31.21%, rgba(255, 54, 54, 0.79) 76.47%);
-  background-image: -webkit-gradient(241.74deg, #D80101 -31.21%, rgba(255, 54, 54, 0.79) 76.47%);
-  -webkit-background-clip: text;
-  color: transparent;
+  color: red;
 }
 
 .desc__body {
@@ -1489,7 +1479,6 @@ body.lock {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: red;
 }
 
 .advantages__body {
