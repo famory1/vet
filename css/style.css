@@ -1481,6 +1481,7 @@ body.lock {
 }
 
 .advantages__title {
+  text-align: center;
   margin-top: 140px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1556,6 +1557,7 @@ body.lock {
 }
 
 .price__title {
+  text-align: center;
   font-weight: 600;
   font-size: 48px;
   z-index: 1;
