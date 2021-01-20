@@ -2172,8 +2172,10 @@ body.lock {
 }
 
 .contact__google-map {
+  background-image: url("../img/map.jpg");
   -webkit-filter: drop-shadow(0px 10px 10px rgba(255, 138, 138, 0.29));
           filter: drop-shadow(0px 10px 10px rgba(255, 138, 138, 0.29));
+  background-position: center center;
 }
 
 .contact__part {
@@ -2551,10 +2553,6 @@ body.lock {
             transform: none;
   }
 
-  .background::after {
-    background: url("../img/bg.jpg") right/cover no-repeat;
-  }
-
   body.lock {
     overflow: hidden;
   }
@@ -2925,6 +2923,12 @@ body.lock {
 }
 
 @media (max-width: 479px), (max-height: 479px) {
+  .background::after {
+    -webkit-transform: scale(-1, 1);
+        -ms-transform: scale(-1, 1);
+            transform: scale(-1, 1);
+  }
+
   .navbar__logo {
     width: 150px;
     -webkit-transform: scale(0.65);
@@ -3200,9 +3204,14 @@ body.lock {
   }
 }
 
+@media (max-height: 479px) {
+  .background::after {
+    -webkit-transform: scale(1, 1);
+        -ms-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+}
+
 .webp .background::after{ background: url(../img/bg.webp) right/cover no-repeat; }
 
-@media (max-width: 991px){
-
-  .webp .background::after{ background: url(../img/bg.webp) right/cover no-repeat; }
-}
+.webp .contact__google-map{ background-image: url(../img/map.webp); }
