@@ -257,7 +257,7 @@ $(document).ready(function(){
 });
 
 // Плавная прокуртка до нужного раздела
-$(".navbar__link, .contact__link").on("click", function(e){
+$(".navbar__link, .contact__link	").on("click", function(e){
 	$('.navbar__burger,.navbar__panel,.navbar__logo,.navbar__phone').removeClass('active');
 	$('body').removeClass('lock');
     e.preventDefault();
@@ -360,24 +360,16 @@ $(document).ready(function() {
 
 
 // Ленивая загрузка гугл карт
-let map_container = document.getElementById('contact__google-map');
-    let options_map = {
-        once: true,
-        passive: true,
-        capture: true
-    };
-    map_container.addEventListener('click', start_lazy_map, options_map);
-    map_container.addEventListener('mouseover', start_lazy_map, options_map);
-    map_container.addEventListener('touchstart', start_lazy_map, options_map);
-    map_container.addEventListener('touchmove', start_lazy_map, options_map);
 
-    let map_loaded = false;
-    function start_lazy_map() {
-        if (!map_loaded) {
-            let map_block = document.getElementById('google-maps');
-            map_loaded = true;
-            map_block.setAttribute('src', map_block.getAttribute('data-src'));
-            map_block.removeAttribute('data-src');
-            console.log('YMAP LOADED');
-        }
-    }
+$(document).ready(function() {
+	var reviews = $('.reviews');
+	var reviewsTop = reviews.offset().top;
+	$(window).bind('scroll', function(){
+		var windowTop = $(this).scrollTop();
+		if (windowTop > reviewsTop) {
+			$('#contact__google-map').html('<iframe id="google-maps" class="contact__maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1149.2215815800207!2d56.06470714990197!3d54.824899451350845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43d937df5d4b429b%3A0x487a144c131afd87!2z0YPQuy4g0JrQvtC90YHRgtC40YLRg9GG0LjQuCwgMSwg0KPRhNCwLCDQoNC10YHQvy4g0JHQsNGI0LrQvtGA0YLQvtGB0YLQsNC9LCA0NTAxMTI!5e0!3m2!1sru!2sru!4v1609146593666!5m2!1sru!2sru"  frameborder="0"  allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>');
+			$(window).unbind('scroll');
+			console.log('GRIB');
+		}
+	});
+});
