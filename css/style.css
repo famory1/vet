@@ -321,7 +321,7 @@ h6 {
   }
 
   100% {
-    width: 60%;
+    width: 60.38%;
   }
 }
 
@@ -331,7 +331,7 @@ h6 {
   }
 
   100% {
-    width: 60%;
+    width: 60.38%;
   }
 }
 
@@ -1353,7 +1353,7 @@ body.lock {
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
   height: 100vh;
-  width: 60%;
+  width: 60.38%;
   position: absolute;
   -webkit-animation: blur 1.3s ease;
           animation: blur 1.3s ease;
@@ -1646,7 +1646,7 @@ body.lock {
 .title {
   font-weight: 600;
   font-size: 48px;
-  z-index: 10;
+  z-index: 2;
   line-height: 59px;
   letter-spacing: 0.015em;
   background: -o-linear-gradient(208.26deg, #D80101 -31.21%, rgba(255, 54, 54, 0.79) 76.47%);
@@ -2009,8 +2009,8 @@ body.lock {
 }
 
 .doctors__person {
-  -webkit-animation: puffIn 0.7s ease;
-          animation: puffIn 0.7s ease;
+  -webkit-animation: spaceInUp 1s ease;
+          animation: spaceInUp 1s ease;
 }
 
 .doctors__person.hide {
@@ -2020,11 +2020,9 @@ body.lock {
 .doctors__person:after {
   content: '';
   position: absolute;
-  background: -o-linear-gradient(84.87deg, #FFF9F9 53.42%, rgba(255, 249, 249, 0) 90.37%);
-  background: linear-gradient(5.13deg, #FFF9F9 53.42%, rgba(255, 249, 249, 0) 90.37%);
-  -webkit-backdrop-filter: blur(2px);
-          backdrop-filter: blur(2px);
-  width: 110%;
+  background: -o-linear-gradient(84.87deg, #FFF9F9 53.42%, rgba(255, 249, 249, 0) 85%);
+  background: linear-gradient(5.13deg, #FFF9F9 53.42%, rgba(255, 249, 249, 0) 85%);
+  width: 120%;
   height: 300px;
   z-index: 1;
   left: -1%;
@@ -2185,6 +2183,7 @@ body.lock {
 .swiper-pagination {
   position: relative;
   margin-bottom: 50px;
+  z-index: 2;
 }
 
 .swiper-pagination-bullet {
@@ -2293,31 +2292,13 @@ body.lock {
 }
 
 .popup__close {
-  position: absolute;
-  left: 90%;
-}
-
-.popup__close span {
+  opacity: 70%;
   width: 25px;
-  height: 2px;
-  background-color: #555;
+  height: 25px;
   position: absolute;
-  z-index: 1;
-  -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-
-.popup__close span:before {
-  content: '';
-  width: 25px;
-  height: 2px;
-  background-color: #555;
-  position: absolute;
-  z-index: 1;
-  -webkit-transform: rotate(90deg);
-      -ms-transform: rotate(90deg);
-          transform: rotate(90deg);
+  top: 0;
+  right: 0;
+  margin: 20px 20px 0px 0px;
 }
 
 .popup__form {
@@ -3356,6 +3337,11 @@ body.lock {
     padding: 20px 20px;
     width: 300px;
     height: 300px;
+  }
+
+  .popup__close {
+    width: 15px;
+    height: 15px;
   }
 
   .popup__title {

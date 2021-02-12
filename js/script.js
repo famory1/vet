@@ -268,7 +268,7 @@ $(document).ready(function(){
 });
 
 // Плавная прокуртка до нужного раздела
-$(".navbar__link, .contact__link	").on("click", function(e){
+$(".navbar__link, .contact__link, .logo-link").on("click", function(e){
 	$('.navbar__burger,.navbar__panel,.navbar__logo,.navbar__phone').removeClass('active');
 	$('body').removeClass('lock');
     e.preventDefault();
