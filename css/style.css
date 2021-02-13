@@ -2022,8 +2022,8 @@ body.lock {
   position: absolute;
   background: -o-linear-gradient(84.87deg, #FFF9F9 53.42%, rgba(255, 249, 249, 0) 85%);
   background: linear-gradient(5.13deg, #FFF9F9 53.42%, rgba(255, 249, 249, 0) 85%);
-  width: 120%;
-  height: 300px;
+  width: 110%;
+  height: 50%;
   z-index: 1;
   left: -1%;
   top: 60%;
@@ -2447,7 +2447,7 @@ body.lock {
   max-width: 1190px;
   margin: 0 auto;
   margin-top: 140px;
-  padding: 0px 15px;
+  padding: 0px 15px 15px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2615,6 +2615,50 @@ body.lock {
   color: #E4999EFF;
 }
 
+@media (max-width: 1280px) {
+  .fadeIn {
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+  }
+
+  .fadeRight {
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+  }
+
+  .fadeLeft {
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+  }
+
+  .fadeTop {
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+  }
+
+  .fadeBottom {
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+  }
+
+  .AnimateFadeIn {
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+  }
+
+  .AnimateFade {
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+  }
+}
+
 @media (max-width: 1202px) {
   .price__body {
     margin-top: 50px;
@@ -2722,48 +2766,6 @@ body.lock {
 }
 
 @media (max-width: 991px) {
-  .fadeIn {
-    -webkit-transform: none;
-        -ms-transform: none;
-            transform: none;
-  }
-
-  .fadeRight {
-    -webkit-transform: none;
-        -ms-transform: none;
-            transform: none;
-  }
-
-  .fadeLeft {
-    -webkit-transform: none;
-        -ms-transform: none;
-            transform: none;
-  }
-
-  .fadeTop {
-    -webkit-transform: none;
-        -ms-transform: none;
-            transform: none;
-  }
-
-  .fadeBottom {
-    -webkit-transform: none;
-        -ms-transform: none;
-            transform: none;
-  }
-
-  .AnimateFadeIn {
-    -webkit-transform: none;
-        -ms-transform: none;
-            transform: none;
-  }
-
-  .AnimateFade {
-    -webkit-transform: none;
-        -ms-transform: none;
-            transform: none;
-  }
-
   body.lock {
     overflow: hidden;
   }
@@ -2997,9 +2999,46 @@ body.lock {
     margin-top: 15px;
   }
 
+  .popup__wrapper {
+    width: 450px;
+    height: 450px;
+  }
+
+  .popup__title {
+    font-size: 36px;
+    line-height: 38px;
+  }
+
+  .popup__text {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.015em;
+    background: transparent;
+    border: 2px solid #FF8D8D;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    resize: none;
+    width: 300px;
+    height: 80px;
+  }
+
+  .popup__btn {
+    -webkit-transform: scale(0.7);
+        -ms-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+
+  .footer__body {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 767px) {
   .price__list-title {
     font-size: 20px;
     line-height: 24px;
+    text-align: center;
   }
 
   .price__list-subtitle {
@@ -3020,6 +3059,13 @@ body.lock {
     font-size: 16px;
     line-height: 16px;
     width: 30%;
+  }
+
+  .price__list-table {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
   }
 
   .doctors__body {
@@ -3092,36 +3138,6 @@ body.lock {
     height: 15px;
   }
 
-  .popup__wrapper {
-    width: 450px;
-    height: 450px;
-  }
-
-  .popup__title {
-    font-size: 36px;
-    line-height: 38px;
-  }
-
-  .popup__text {
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 22px;
-    letter-spacing: 0.015em;
-    background: transparent;
-    border: 2px solid #FF8D8D;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    resize: none;
-    width: 300px;
-    height: 80px;
-  }
-
-  .popup__btn {
-    -webkit-transform: scale(0.7);
-        -ms-transform: scale(0.7);
-            transform: scale(0.7);
-  }
-
   .contact__body {
     margin-top: 50px;
   }
@@ -3132,8 +3148,26 @@ body.lock {
     height: 380px;
   }
 
-  .footer__body {
-    margin-top: 50px;
+  .contact__title {
+    text-align: center;
+  }
+
+  .contact__subtitle {
+    text-align: center;
+  }
+
+  .contact__part {
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .contact__item {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
   }
 }
 
@@ -3250,6 +3284,12 @@ body.lock {
   .price__filter-link {
     font-size: 16px;
     line-height: 20px;
+  }
+
+  .price__buttons {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 
   .price__btn {
